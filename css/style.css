@@ -4,3 +4,92 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  font-family: sans-serif;
+}
+
+/* regole header */
+header {
+  padding: 10px 20px;
+  display: flex;
+  min-height: 50px;
+  border: solid 1px red;
+  justify-content: space-between;
+}
+
+header a{
+  color: #808080;
+  text-decoration: none;
+}
+
+/* regole nav sinistra */
+.mainnav-left > ul{
+  display: flex;
+  align-items: center;
+}
+
+.mainnav-left > ul > li {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.mainnav-left > ul > li a:hover{
+  color: #000;
+}
+
+.mainnav-left img{
+  width: 100px;
+}
+
+/* regole nav destra */
+.mainnav-right > ul > li {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.mainnav-right > ul > li a i{
+  font-size: 10px;
+}
+
+.dropitem {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top:30px;
+  left:50%;
+  transform: translate(-50%);
+  background-color: #fff;
+  box-shadow: 1px 1px 10px 1px #cecece;
+  width: 200px;
+  padding: 20px 10px 0px 10px;
+  text-align: center;
+}
+
+.dropdown > ul > li{
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.dbloc {
+  display: block;
+}
+
+/* regole bottone scarica l'app */
+.mainnav-right > ul > li button{
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: #eb008d;
+  color: #fff;
+  border: none;
+}
+
+.mainnav-right > ul > li button:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
