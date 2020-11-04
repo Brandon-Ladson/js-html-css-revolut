@@ -98,3 +98,24 @@ header a{
   cursor: pointer;
   text-decoration: underline;
 }
+
+/* icona hamburger menu */
+.mainnav-right > a{
+  display: none;
+}
+
+/* regole versione smartphone e tablet */
+@media screen and (max-width: 1060px){
+
+    .mainnav-right ul {
+      display: none;
+    }
+
+    .mainnav-right > a {
+      display: block;
+    }
+
+    .hamburger-menu.active {
+      display: block;
+    }
+}
